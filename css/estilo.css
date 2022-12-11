@@ -1,0 +1,672 @@
+/* Hoja de estilos CSS */
+/* ROGELIO DOMINGUEZ NOLASCO */
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Sansita', sans-serif;
+
+}
+
+body{
+	min-height: 1000px;
+
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+	z-index: 1000;
+	transition: 0.6s;
+	background: rgb(27,90,100);
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+header .logo{
+		font-weight: 700;
+		color: #fff;
+		text-decoration: none;
+		font-size: 2em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		transition: 0.6s;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header ul li{
+	list-style: none;
+}
+header ul li a{
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+header.sticky{
+	padding: 5px 100px;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+header.sticky .logo,
+header.sticky ul li a{
+	color: #000;
+}
+
+
+
+.banner{
+	width: 100%;
+	min-height: 100vh;
+	background: url(../assets/textura.jpeg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+}
+
+.banner h2{
+	color: #fff;
+	font-size: 80px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1em;
+}
+
+.banner h2 span {
+	color: #1248ff;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.sec{
+	background: #fff;
+	padding: 100px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.sec .content{
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.mxw800p{
+	max-width: 800px;
+	margin: 0 auto;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.btn{
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	padding: 10x 30px;
+	text-decoration: none;
+}
+h3{
+	font-size: 40px;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+p{
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+.services{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 30px;
+	max-width: 100%;
+	margin-top: 40px;
+}
+
+.services .box{
+	width: 300px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 0px 20px 25px rgba(0,0,0,0.5);
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.services .box .iconBx{
+	margin-top: 25px;
+}
+
+.services .box .iconBx{
+	max-width: 70px;
+	margin-bottom: 15px;
+	margin-left: 70px;
+}
+.services .box h2{
+	font-size: 18px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.stats{
+	background: #000;
+	padding-top: 250px;
+	margin-top: -250px;
+}
+
+.stats h3,
+.stats p
+{
+	color: #fff;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.statsBox{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+	max-width: 100%;
+}
+.statsBox h2{
+	color: #fff;
+	font-size: 36px;
+}
+
+.statsBox h4{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.workBx{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+	max-width: 100%;
+	margin-top: 40px;
+}
+
+.workBx .brand{
+	position: relative;
+	background: #4978ff;
+	height: 330px;
+	width: 250px;
+	margin: 0 auto;
+/*ROGELIO DOMINGUEZ NOLASCO */	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.workBx .brand:hover{
+	background: #000;
+}
+
+.workBx .brand a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.4);
+	text-transform: uppercase;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.teamBx{
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 20px;
+	max-width: 100px;
+	margin-top: 40px;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.teamBx .member{
+	position: relative;
+	background: #000;
+	min-height: 450px;
+	width: 310px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.teamBx .member .imgBx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.teamBx .member .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.teamBx .member .details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	transition: 0.2s;
+	opacity: 0;
+}
+
+.teamBx .member .details:hover{
+	opacity: 1;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.teamBx .member .details h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.teamBx .member .details h2 span{
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+/* Slider */
+.slider{
+	position: relative;
+}
+
+.slider-items{
+	overflow:hidden;
+}
+@keyframes zoom{
+	0% { transform: scale(1.2); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
+
+.slider-items .item{
+	display: none;
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+	animation: zoom 1s;
+}
+
+.slider-items .item.active{
+	display: block;
+}
+
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.slider-items .item .caption{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #000;
+	background: rgba(255,255,255,0.5);
+	font-size: 20px; 
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.slider .left-slide, .slider .right-slide{
+position: absolute;	
+height: 40px;
+width:  40px;
+background: #444444;
+color: #fff;
+font-size: 20px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+cursor: pointer;
+transition: all .5s ease;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.slider .left-slide{
+	left: 10px;
+}
+
+.slider .right-slide{
+	right: 10px;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.slider .left-slide:hover,
+.slider .right-slide:hover{
+	background: #46a2fd;
+}
+
+
+
+
+
+
+
+
+
+ 
+.contact{
+	background: #000;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+.contact h3, .contact p{
+	color: #fff;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm{
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm form{
+	width: 100%;
+}
+
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm .row100{
+	display: flex;
+	width: 100%;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm .row100 .inputBx50{
+	width: 50%;
+	margin: 0 20px;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm .row100 .inputBx100{
+	width: 100%;
+	margin: 0 20px;
+}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm .row100 input,
+.contactForm .row100 textarea{
+	position: relative;
+	border: none;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	background: transparent;
+	width: 100%;
+	padding: 10px 0;
+	outline: none;
+	font-size: 18px;
+	font-weight: 300;
+	margin: 20px 0;
+	resize: none;
+
+}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.contactForm .row100 textarea{
+	height: 100px;
+}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+.contactForm .row100 input::placeholder,
+.contactForm .row100 textarea::placeholder{
+
+	color: rgba(255,255,255,0.5);
+}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+.contactForm .row100 input[type="submit"]{
+	background: #fff;
+	color: #000;
+	max-width: 100px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+#text{
+	display: block;
+	color: #000;
+	font-weight: 500;
+	padding: 1px;
+	text-align: left;
+	margin-top: -10px;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+.sci{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+.sci ul{
+	display: flex;
+}
+.sci ul li{
+	list-style: none;
+}
+.sci ul li a{
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 30px;
+}
+.sci ul li a img{
+	filter: invert();
+	max-width: 70px;
+	max-height: 60px;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+
+.sci ul li a:hover img{
+	opacity: 0.5;
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+#button-up{
+	width: 60px;
+	height: 60px;
+	background: #46a2fd;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 4px solid transparent;
+
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #fff;
+	font-size: 20px;
+
+	transition: all 300ms ease;
+	transform: scale(1);
+	box-shadow: 0px 20px 25px rgba(0,0,0,0.5);
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+#button-up:hover{
+	transform: scale(1.1);
+	border-color: rgba(0,0,0,0.1);
+}
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+@media (max-width: 992px){
+
+	.toggle{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+.toggle:before{
+	content: '';
+	position: absolute;
+	top: 4px;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	z-index: 1;
+	box-shadow: 0 10px 0 #000;
+	transition: 0.5s;
+}
+/*ROGELIO DOMINGUEZ NOLASCO */
+.toggle:after{
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	z-index: 1;
+	transition: 0.5s;
+
+}
+
+
+
+	header,
+	header.sticky{
+		padding: 5px 50px;
+		background: #fff;
+	}
+
+	header .logo,
+	header ul li a{
+		color: #000;
+	}
+/*ROGELIO DOMINGUEZ NOLASCO */
+	header ul {
+		position: absolute;
+		top: 45px;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		overflow: auto;
+		visibility: hidden;
+		background: #fff;
+		opacity: 0;
+
+	}
+
+
+	header.active ul{
+		visibility: visible;
+		opacity: 1;
+		display: block;
+		padding-top: 20px;
+	}
+
+	/*ROGELIO DOMINGUEZ NOLASCO */
+	header.active ul li a{
+		display: inline-block;
+		margin: 10px 0;
+		font-size: 20px;
+	}
+
+
+/*ROGELIO DOMINGUEZ NOLASCO */
+	.banner{
+		background-position: center;
+	}
+	.banner h2{
+		font-size: 60px;
+		padding: 0 50px;
+	}
+	.sec{
+		padding: 100px 50px 50px 50px;
+	}
+
+	.services .box{
+		width: 80%;
+	}
+	.stats{
+		padding-top: 250px;
+	}
+
+	.row100{
+		flex-direction: column;
+	}
+	/*ROGELIO DOMINGUEZ NOLASCO */
+	.contactForm .row100 .inputBx50,
+	.contactForm .row100 .inputBx100{
+		width: 100%;
+		margin: 0;
+	}
+
+	.sci{
+		margin: 20px
+	}
+
+	.sci ul li a img{
+		font-size: 24px;
+	}
+
+}
+
+
+
+
+
+
